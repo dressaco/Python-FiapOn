@@ -1,0 +1,13 @@
+name = input('Digite um funcionário: ')
+company = input('Digite a instituição: ')
+qt_colabs = int(input('Digite a qtde de funcionários: '))
+monthly_pay_average = float(input('Digite a média da mensalidade: '))
+
+print(name + ' trabalha na empresa ' + company)
+print('Possui:', qt_colabs, 'funcionarios')
+print('A média da mensalidade é de: ' + str(monthly_pay_average))
+print("==============Verifique os tipos de dados abaixo:==============")
+print('O tipo de dado da variável [name] é:', type(name))
+print('O tipo de dado da variável [company] é:', type(company))
+print('O tipo de dado da variável [qt_colabs] é:', type(qt_colabs))
+print('O tipo de dado da variável [monthly_pay_average] é:', type(monthly_pay_average))
