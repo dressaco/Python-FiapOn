@@ -11,7 +11,7 @@ if age >= 65:
   else:
   print('Responda a suspeita de doença infectocontagiosa com \'S\' ou \'N\'')
 
-if age < 65:
+else:
   print('Paciente SEM prioridade')
   if contagious_susp == 'S':
   print('Encaminhe o paciente para a sala AMARELA')
