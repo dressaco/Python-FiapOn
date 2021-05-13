@@ -21,7 +21,7 @@ for indice in range(0,len(equipamentos)):
     del valores[indice]
     del seriais[indice]
     del departamentos[indice]
-    break
+    break #usamos o break pois já foi encontrado o item desejado. alem disso, deletar um item irá bagunçar o index e consequentemente a ocorrencia do for.
 
 #impressao listas atualizadas
 for indice in range(0,len(equipamentos)):
