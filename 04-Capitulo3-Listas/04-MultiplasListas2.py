@@ -11,3 +11,22 @@ for indice in range (0,len(equipamentos)):
     print('Valor antigo.:' , valores[indice])
     valores[indice] *= 0.9
     print('Novo valor...:' , valores[indice])
+
+#Situacao 2 => serial danificado, descarte (usar del)
+damaged = int(input('Digite o serial do equipamento que será excluido: '))
+
+for indice in range(0,len(equipamentos)):
+  if damaged == seriais[indice]:
+    del equipamentos[indice]
+    del valores[indice]
+    del seriais[indice]
+    del departamentos[indice]
+    break
+
+#impressao listas atualizadas
+for indice in range(0,len(equipamentos)):
+  print('\nEquipamento..:' , (indice+1))
+  print('Nome.........:' , equipamentos[indice])
+  print('Valor........:' , valores[indice])
+  print('Serial.......:' , seriais[indice])
+  print('Departamento.:' , departamentos[indice])
