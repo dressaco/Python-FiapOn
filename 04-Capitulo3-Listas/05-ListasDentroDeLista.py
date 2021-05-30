@@ -54,5 +54,5 @@ for i in inventory:
 
 if len(values) > 0:
   print('O equipamento mais caro custa: ',max(values))
-  print('O equipamento mais barato custa: ',minx(values))
+  print('O equipamento mais barato custa: ',min(values))
   print('O total de equipamentos é de: ',sum(values))
