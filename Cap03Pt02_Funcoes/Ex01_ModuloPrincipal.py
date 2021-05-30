@@ -5,18 +5,18 @@ minhaLista = []
 print('Preenchendo')
 fillInventory(minhaLista)
 
-print('Exibindo')
+print('\nExibindo')
 showInventory(minhaLista)
 
-print('Pesquisando')
+print('\nPesquisando')
 searchByName(minhaLista)
 
-print('Alterando')
+print('\nAlterando')
 depreciateByName(minhaLista,20)
 
-print('Excluindo')
+print('\nExcluindo')
 print(removeBySerial(minhaLista))
 showInventory(minhaLista)
 
-print('Resumindo')
+print('\nResumindo')
 totalValues(minhaLista)

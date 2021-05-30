@@ -34,7 +34,8 @@ def removeBySerial(list):
   for i in list:
     if damaged == i[2]:
       list.remove(i)
-    return 'Itens excluídos.'
+      
+  return 'Itens excluídos.'
 
 def totalValues(list):
   values = []
