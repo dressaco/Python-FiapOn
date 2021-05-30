@@ -45,3 +45,14 @@ for i in inventory:
   print('Valor........:' , i[1])
   print('Serial.......:' , i[2])
   print('Departamento.:' , i[3])
+
+#funções para listas numericas
+values = []
+
+for i in inventory:
+  values.append(i[1])
+
+if len(values) > 0:
+  print('O equipamento mais caro custa: ',max(values))
+  print('O equipamento mais barato custa: ',minx(values))
+  print('O total de equipamentos é de: ',sum(values))
