@@ -8,7 +8,6 @@ while answer == 'S':
 
 #impressao lista inicial
 for i in inventory:
-  print('\nEquipamento..:' , (i+1))
   print('Nome.........:' , i[0])
   print('Valor........:' , i[1])
   print('Serial.......:' , i[2])
@@ -40,7 +39,6 @@ for i in inventory:
 
 #impressao listas atualizadas
 for i in inventory:
-  print('\nEquipamento..:' , (i+1))
   print('Nome.........:' , i[0])
   print('Valor........:' , i[1])
   print('Serial.......:' , i[2])

@@ -7,7 +7,6 @@ def fillInventory(list):
 
 def showInventory(list):
   for i in list:
-    print('\nEquipamento..:' , (i+1))
     print('Nome.........:' , i[0])
     print('Valor........:' , i[1])
     print('Serial.......:' , i[2])
