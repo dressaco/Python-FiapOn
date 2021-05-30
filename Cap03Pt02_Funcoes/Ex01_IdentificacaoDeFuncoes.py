@@ -1,9 +1,9 @@
 def fillInventory(list):
   answer = 'S'
   while answer == 'S':
-    equipment = [input('Equipamento: '),float(input('Valor: ')),int(input('Numero Serial: ')),input('Departamento: ')]
+    equipment = [input('\nEquipamento: '),float(input('Valor: ')),int(input('Numero Serial: ')),input('Departamento: ')]
     list.append(equipment)
-    answer = input('Digite \'S\' para continuar: ').upper()
+    answer = input('\nDigite \'S\' para continuar: ').upper()
 
 def showInventory(list):
   for i in list:
@@ -11,30 +11,25 @@ def showInventory(list):
     print('Valor........:' , i[1])
     print('Serial.......:' , i[2])
     print('Departamento.:' , i[3])
+    print('-'*20)
 
-def searchByName(list):
-  search = input('Digite o nome do equipamento que deseja buscar: ')
+def searchByName(list,name):
   for i in list:
-    if search == i[0]:
+    if name == i[0]:
       print('Valor........:' , i[1])
       print('Serial.......:' , i[2])
 
-def depreciateByName(list,porcent):
-  depreciation = input('Digite o nome do equipamento que será depreciado: ')
-
+def depreciateByName(list,name,porcent):
   for i in list:
-    if depreciation == i[0]:
+    if name == i[0]:
       print('Valor antigo.:' , i[1])
       i[1] *= 1 - (porcent/100)
       print('Novo valor...:' , i[1])
 
-def removeBySerial(list):
-  damaged = int(input('Digite o serial do equipamento que será excluido: '))
-
+def removeBySerial(list,serial):
   for i in list:
-    if damaged == i[2]:
+    if serial == i[2]:
       list.remove(i)
-      
   return 'Itens excluídos.'
 
 def totalValues(list):

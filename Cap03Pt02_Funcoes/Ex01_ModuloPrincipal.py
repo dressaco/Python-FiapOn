@@ -9,13 +9,13 @@ print('\nExibindo')
 showInventory(minhaLista)
 
 print('\nPesquisando')
-searchByName(minhaLista)
+searchByName(minhaLista,input('Equipamento: '))
 
 print('\nAlterando')
-depreciateByName(minhaLista,20)
+depreciateByName(minhaLista,input('Equipamento: '),int(input('% Depreciação: ')))
 
 print('\nExcluindo')
-print(removeBySerial(minhaLista))
+print(removeBySerial(minhaLista,int(input('Serial: '))))
 showInventory(minhaLista)
 
 print('\nResumindo')
